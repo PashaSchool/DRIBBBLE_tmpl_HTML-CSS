@@ -1,0 +1,217 @@
+body {
+  position: relative; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 425px;
+  min-height: 600px;
+  height: -webkit-calc(100% - 100px);
+  height: calc(100% - 100px);
+  -webkit-box-shadow: 0px 0px 2px #202020;
+  box-shadow: 0px 0px 2px #202020;
+  font-family: 'Overpass', sans-serif;
+  position: relative; }
+
+.top-view {
+  width: 100%;
+  position: relative;
+  height: 50%;
+  background-image: url(/img/bgc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .top-view .overlay-color {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 23, 102, 0.2);
+    padding: 30px 30px 0 30px; }
+  .top-view .navbar {
+    width: 100%;
+    display: inline-block; }
+    .top-view .navbar a.search-button {
+      display: block;
+      float: right;
+      font-size: 25px;
+      color: #fdfdfd; }
+    .top-view .navbar .menu {
+      float: left;
+      width: 25px;
+      height: 25px;
+      line-height: 25px; }
+    .top-view .navbar span.burger {
+      position: relative;
+      display: block;
+      background-color: #fdfdfd;
+      width: 22px;
+      height: 1px; }
+      .top-view .navbar span.burger:after, .top-view .navbar span.burger:before {
+        content: '';
+        width: 22px;
+        height: 1px;
+        position: absolute;
+        background-color: #fdfdfd; }
+      .top-view .navbar span.burger:after {
+        top: 8px; }
+      .top-view .navbar span.burger:before {
+        top: 16px; }
+
+.header {
+  color: #fdfdfd;
+  position: relative; }
+  .header h1 {
+    text-align: center;
+    letter-spacing: 3px; }
+
+.profile {
+  width: 40px;
+  height: auto;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+  .profile.main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative; }
+
+.profile-container {
+  width: 120px;
+  height: 120px;
+  margin: 30px auto;
+  position: relative; }
+
+.notification {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #50D2C2;
+  text-align: center; }
+  .notification span {
+    font-size: 14;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -7px; }
+
+.bottom-view {
+  height: 50%;
+  overflow: hidden; }
+
+.moth-selection {
+  color: #fdfdfd;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding: 5px;
+  line-height: 12px;
+  margin-bottom: 20px; }
+  .moth-selection i {
+    font-size: 24px;
+    font-weight: bolder; }
+  .moth-selection i.left {
+    float: left; }
+  .moth-selection i.right {
+    float: right; }
+
+.week-container {
+  padding: 5px 20px; }
+
+.week {
+  display: block; }
+
+li.day {
+  display: inline-block;
+  width: 13%;
+  height: 0;
+  position: relative;
+  font-width: 300;
+  padding: 0 0 13%; }
+  li.day.curent {
+    background-color: silver;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+  li.day span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px; }
+  li.day.day-names {
+    text-transform: uppercase; }
+
+.point:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff3344;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  bottom: 20%; }
+
+.entery-container {
+  padding: 0;
+  margin: 0; }
+
+.entery {
+  padding: 20px;
+  border-top: 1px solid silver; }
+  .entery img {
+    display: inline-block;
+    margin-right: 20px; }
+
+.text {
+  display: inline-block; }
+  .text .title {
+    font-size: 16px;
+    font-weight: 600; }
+  .text .time {
+    margin-top: 7px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 1px; }
+  .text .name {
+    font-weight: bolder; }
+
+.action-button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 0 10px #505050;
+  box-shadow: 0 0 10px #505050;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ff3344; }
+  .action-button:after {
+    content: "+";
+    text-align: center;
+    position: absolute;
+    font-size: 40px;
+    width: 100%;
+    color: white;
+    top: 50%;
+    margin-top: -20px;
+    font-weight: 100; }
