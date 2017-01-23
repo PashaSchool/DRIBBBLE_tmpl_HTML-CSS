@@ -28,7 +28,7 @@ ul {
   width: 100%;
   position: relative;
   height: 50%;
-  background-image: url(/img/bgc.jpg);
+  background-image: url('../../img/bgc.jpg');
   background-size: cover;
   background-repeat: no-repeat; }
   .top-view .overlay-color {
