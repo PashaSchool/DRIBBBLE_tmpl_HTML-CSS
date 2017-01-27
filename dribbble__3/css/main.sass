@@ -1,0 +1,144 @@
+$white: #eee
+$black: #000000
+$grey: #aaa
+$blue: #20A6FC
+$green: #00BC79
+
+*
+	box-sizing: border-box
+	font-family: 'Source Sans Pro', sans-serif
+
+.container
+	max-width: 350px
+	max-height: 600px
+	margin: 30px auto 0
+	overflow: hidden
+	background-color: $white
+	box-shadow: 0 0 40px lighten($black, 50)
+
+.header
+	i
+		vertical-align: top
+		text-align: right
+		padding: 1em 1em 0 0
+		font-size: 1.5em
+		width: 25%
+		color: $grey
+	img
+		width: 45%
+		border-radius: 0 0 10px 10px
+
+.about
+	margin: 0 25%
+	width: 45%
+	position: relative
+
+	h1
+		font-size: 1.8em
+		font-weight: 100
+		margin: .6em 0 0 0
+	span
+		font-size: .8em
+		color: $grey
+		line-height: 1
+		font-weight: 300
+		padding-right: 50%
+.follow
+	position: absolute
+	left: 110%
+	top: 0
+	padding: 1em
+	box-shadow: 0 0 20px lighten($black, 80)
+	border-radius: 8px
+	cursor: pointer
+
+	span
+		font-size: 1.5em
+	h2
+		font-size: .7em
+		font-weight: 300
+		margin: 0
+ul
+	padding: 0
+	margin: 1.5em 0 0
+
+	li
+		padding: 15px 0 15px 25%
+		font-size: .8em
+		line-height: 1.8
+		border-top: 1px solid rgba($grey, .2)
+		color: $grey
+		font-weight: 300
+		p
+			padding: 0 2em 0 0
+			margin: 0
+			line-heigh: 1.2
+			font-size: 1em
+t
+.no-padding
+	padding: 0 0 0 25%
+
+.half	
+	display: inline-block
+	color: $grey
+	padding-right: 2.2em
+	font-weight: 300
+	padding: 20px 0 20px 2em
+
+	&:first-child
+		padding-right: 2em
+		border-right: 1px solid rgba($grey, .2)
+
+	span
+		font-size: 1.2em
+		font-weight: 900
+		display: block
+		line-height: .5
+		color: $black
+
+
+.gallery
+
+.photo
+	width: 75px
+	height: 75px
+	display: inline-block
+	margin-right: 5px
+	border-radius: 10px
+	overflow: hidden
+	position: relative
+
+	img
+		width: 100%
+		height: 100%
+	&.more
+		background-color: $blue
+		text-align: center
+		color: $white
+		box-shadow: 0 0 20px lighten($black, 70)
+		padding: 2em 1em
+		font-weight: 300
+		span
+			display: block
+			font-size: 1.2em
+			font-weight: 400
+			line-height: 0.6
+
+.dot
+	position: relative
+
+.meta
+	color: $grey
+	line-height: .8
+	margin-bottom: 10px
+
+.dot::after
+
+	content: ''
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	background-color: $green
+	position: absolute
+	left: 15%
+	top: 25px
